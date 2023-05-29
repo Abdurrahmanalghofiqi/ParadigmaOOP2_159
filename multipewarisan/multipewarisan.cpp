@@ -37,6 +37,16 @@ public:
 		manusia(pJeniskelamin),
 		sekolah(pSekolah) {
 		cout << "pelajar dibuat\n" << endl;
-
+	}
+	~pelajar() {
+		cout << "pelajar dihapus\n" << endl;
+	}
+	string perkenalan() {
+		return "Hallo, nama saya " + nama + "dengan jeniskelamin " + jeniskelamin;
 	}
 };
+
+int main() {
+	pelajar andi("andi laksono", "Laki-Laki", "belajar");
+	cout << andi.perkenalan();
+}
